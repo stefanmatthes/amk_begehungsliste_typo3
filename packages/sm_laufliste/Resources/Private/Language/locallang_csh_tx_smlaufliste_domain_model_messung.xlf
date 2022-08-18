@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2020-01-25T16:35:57Z" product-name="sm_laufliste">
+		<header/>
+		<body>
+			<trans-unit id="value.description">
+				<source>value</source>
+			</trans-unit>
+			<trans-unit id="module.description">
+				<source>module</source>
+			</trans-unit>
+			<trans-unit id="feuser.description">
+				<source>feuser</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

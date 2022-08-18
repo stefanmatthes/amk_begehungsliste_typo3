@@ -1,0 +1,28 @@
+{
+    "name": "be/sm-laufliste",
+    "type": "typo3-cms-extension",
+    "description": "",
+    "authors": [
+        {
+            "name": "Stefan Matthes",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "typo3/cms-core": "^8.7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Be\\SmLaufliste\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Be\\SmLaufliste\\Tests\\": "Tests"
+        }
+    },
+    "replace": {
+        "sm_laufliste": "self.version",
+        "typo3-ter/sm-laufliste": "self.version"
+    }
+}

@@ -1,0 +1,18 @@
+<html xmlns:f="https://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<label for="zeitstart">
+	<f:translate key="tx_smlaufliste_domain_model_rundgangaktiv.zeitstart" />
+</label><br />
+	<f:form.textfield property="zeitstart" value="{rundgangaktiv.zeitstart->f:format.date()}" /><br />
+<label for="zeitende">
+	<f:translate key="tx_smlaufliste_domain_model_rundgangaktiv.zeitende" />
+</label><br />
+	<f:form.textfield property="zeitende" value="{rundgangaktiv.zeitende->f:format.date()}" /><br />
+<label for="signature">
+	<f:translate key="tx_smlaufliste_domain_model_rundgangaktiv.signature" />
+</label><br />
+	<span>File upload is not implemented!</span><br  /><br />
+<label for="emailprotokoll">
+	<f:translate key="tx_smlaufliste_domain_model_rundgangaktiv.emailprotokoll" />
+</label><br />
+	<f:form.textfield property="emailprotokoll" value="{rundgangaktiv.emailprotokoll->f:format.date()}" /><br />
+</html>

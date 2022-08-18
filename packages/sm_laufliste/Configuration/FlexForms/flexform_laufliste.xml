@@ -1,0 +1,33 @@
+<T3DataStructure>
+	<sheets>
+		<sDEF>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>Function</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<switchableControllerActions>
+						<TCEforms>
+							<label>Select function</label>
+							<config>
+								<type>select</type>
+								<renderType>selectSingle</renderType>
+								<items>
+									<numIndex index="0">
+										<numIndex index="0">LauflisteAPI</numIndex>
+										<numIndex index="1">Modul-&gt;list;Modul-&gt;show;Modul-&gt;new;Modul-&gt;create;Modul-&gt;update;Modul-&gt;showstat;Problem-&gt;list;Problem-&gt;edit;Problem-&gt;show;Problem-&gt;new;Problem-&gt;create;Problem-&gt;update;Problem-&gt;delete</numIndex>
+									</numIndex>
+									<numIndex index="1">
+										<numIndex index="0">Graph</numIndex>
+										<numIndex index="1">Modul-&gt;showstat</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</switchableControllerActions>
+				</el>
+			</ROOT>
+		</sDEF>
+	</sheets>
+</T3DataStructure>

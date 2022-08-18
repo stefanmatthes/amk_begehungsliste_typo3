@@ -1,0 +1,122 @@
+<html xmlns:f="https://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<table class="tx-sm-laufliste" >
+	<tr>
+		<td>
+			<f:translate key="tx_smlaufliste_domain_model_modul.kks" />
+		</td>
+		<td>
+		{modul.kks}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_smlaufliste_domain_model_modul.tokenid" />
+		</td>
+		<td>
+		{modul.tokenid}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_smlaufliste_domain_model_modul.kurztext" />
+		</td>
+		<td>
+		{modul.kurztext}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_smlaufliste_domain_model_modul.anleitung" />
+		</td>
+		<td>
+		{modul.anleitung}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_smlaufliste_domain_model_modul.ort" />
+		</td>
+		<td>
+		{modul.ort}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_smlaufliste_domain_model_modul.checkonly" />
+		</td>
+		<td>
+		{modul.checkonly}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_smlaufliste_domain_model_modul.unit" />
+		</td>
+		<td>
+		{modul.unit}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_smlaufliste_domain_model_modul.dokumente" />
+		</td>
+		<td>
+				<f:for each="{modul.dokumente}" as="file" >
+					<a href="{file.originalResource.publicUrl}">
+						{file.originalResource.name}
+					</a>
+				</f:for>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_smlaufliste_domain_model_modul.images" />
+		</td>
+		<td>
+				<f:for each="{modul.images}" as="image" >
+					<f:image src="{image.originalResource.publicUrl}" width="200"/>
+				</f:for>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_smlaufliste_domain_model_modul.meldung" />
+		</td>
+		<td>
+		{modul.meldung}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_smlaufliste_domain_model_modul.min" />
+		</td>
+		<td>
+		{modul.min}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_smlaufliste_domain_model_modul.max" />
+		</td>
+		<td>
+		{modul.max}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_smlaufliste_domain_model_modul.diff" />
+		</td>
+		<td>
+		{modul.diff}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_smlaufliste_domain_model_modul.letztemessung" />
+		</td>
+		<td>
+		{modul.letztemessung}
+		</td>
+	</tr>
+</table>
+</html>

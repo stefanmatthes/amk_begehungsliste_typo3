@@ -1,0 +1,26 @@
+{
+    "name": "webicorns/login",
+    "description": "Authentication/login for app-based requests",
+    "type": "typo3-cms-extension",
+    "keywords": [
+        "TYPO3 CMS",
+        "felogin"
+    ],
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "php": ">=7.3.0",
+        "typo3/cms-core": "^10",
+        "typo3/cms-frontend": "^10",
+        "typo3/cms-backend": "^10"
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "login"
+        }
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

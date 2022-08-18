@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2020-01-25T16:35:56Z" product-name="sm_laufliste">
+		<header/>
+		<body>
+			<trans-unit id="tx_smlaufliste_domain_model_modul">
+				<source>Modul</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_modul.kks">
+				<source>Kks</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_modul.tokenid">
+				<source>Tokenid</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_modul.kurztext">
+				<source>Kurztext</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_modul.anleitung">
+				<source>Anleitung</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_modul.ort">
+				<source>Ort</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_modul.checkonly">
+				<source>Checkonly</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_modul.unit">
+				<source>Unit</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_modul.dokumente">
+				<source>Dokumente</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_modul.images">
+				<source>Images</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_modul.meldung">
+				<source>Meldung</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_modul.min">
+				<source>Min</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_modul.max">
+				<source>Max</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_modul.diff">
+				<source>Diff</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_modul.letztemessung">
+				<source>Letztemessung</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_modul.problem">
+				<source>Problem</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_schicht">
+				<source>Schicht</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_schicht.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_schicht.zeitstart">
+				<source>Zeitstart</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_schicht.zeitende">
+				<source>Zeitende</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_schicht.tage">
+				<source>Tage</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_laufliste">
+				<source>Laufliste</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_laufliste.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_laufliste.text">
+				<source>Text</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_laufliste.module">
+				<source>Module</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_rundgang">
+				<source>Rundgang</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_rundgang.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_rundgang.standort">
+				<source>Standort</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_rundgang.laufliste">
+				<source>Laufliste</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_rundgang.schichten">
+				<source>Schichten</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_rundgang.user">
+				<source>User</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_rundgang.log">
+				<source>Log</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_feuser">
+				<source>Feuser</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_messung">
+				<source>Messung</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_messung.value">
+				<source>Value</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_messung.module">
+				<source>Module</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_messung.feuser">
+				<source>Feuser</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_problem">
+				<source>Problem</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_problem.text">
+				<source>Text</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_problem.status">
+				<source>Status</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_problem.images">
+				<source>Images</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_problem.feuser">
+				<source>Feuser</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_problem.logs">
+				<source>Logs</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_log">
+				<source>Log</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_log.text">
+				<source>Text</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_log.type">
+				<source>Type</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_log.feuser">
+				<source>Feuser</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_standort">
+				<source>Standort</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_standort.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_standort.ansprechpartner">
+				<source>Ansprechpartner</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_standort.adresse">
+				<source>Adresse</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_standort.rundgaenge">
+				<source>Rundgaenge</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_standort.receiver">
+				<source>Receiver</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_tag">
+				<source>Tag</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_tag.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_rundgangaktiv">
+				<source>Rundgangaktiv</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_rundgangaktiv.zeitstart">
+				<source>Zeitstart</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_rundgangaktiv.zeitende">
+				<source>Zeitende</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_rundgangaktiv.signature">
+				<source>Signature</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_rundgangaktiv.messungen">
+				<source>Messungen</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_rundgangaktiv.schicht">
+				<source>Schicht</source>
+			</trans-unit>
+			<trans-unit id="tx_smlaufliste_domain_model_rundgangaktiv.feuser">
+				<source>Feuser</source>
+			</trans-unit>
+					<trans-unit id="tx_smlaufliste_domain_model_rundgangaktiv.emailprotokoll">
+				<source>Protokoll versandt</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

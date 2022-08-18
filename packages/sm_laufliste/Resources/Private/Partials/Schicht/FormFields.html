@@ -1,0 +1,14 @@
+<html xmlns:f="https://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<label for="name">
+	<f:translate key="tx_smlaufliste_domain_model_schicht.name" />
+</label><br />
+	<f:form.textfield property="name" /><br />
+<label for="zeitstart">
+	<f:translate key="tx_smlaufliste_domain_model_schicht.zeitstart" />
+</label><br />
+	<f:form.textfield property="zeitstart" value="{schicht.zeitstart->f:format.date()}" /><br />
+<label for="zeitende">
+	<f:translate key="tx_smlaufliste_domain_model_schicht.zeitende" />
+</label><br />
+	<f:form.textfield property="zeitende" value="{schicht.zeitende->f:format.date()}" /><br />
+</html>

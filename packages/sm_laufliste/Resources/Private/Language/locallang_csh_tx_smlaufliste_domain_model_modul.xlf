@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2020-01-25T16:35:57Z" product-name="sm_laufliste">
+		<header/>
+		<body>
+			<trans-unit id="kks.description">
+				<source>kks</source>
+			</trans-unit>
+			<trans-unit id="tokenid.description">
+				<source>tokenid</source>
+			</trans-unit>
+			<trans-unit id="kurztext.description">
+				<source>kurztext</source>
+			</trans-unit>
+			<trans-unit id="anleitung.description">
+				<source>anleitung</source>
+			</trans-unit>
+			<trans-unit id="ort.description">
+				<source>ort</source>
+			</trans-unit>
+			<trans-unit id="checkonly.description">
+				<source>checkonly</source>
+			</trans-unit>
+			<trans-unit id="unit.description">
+				<source>unit</source>
+			</trans-unit>
+			<trans-unit id="dokumente.description">
+				<source>dokumente</source>
+			</trans-unit>
+			<trans-unit id="images.description">
+				<source>images</source>
+			</trans-unit>
+			<trans-unit id="meldung.description">
+				<source>meldung</source>
+			</trans-unit>
+			<trans-unit id="min.description">
+				<source>min</source>
+			</trans-unit>
+			<trans-unit id="max.description">
+				<source>max</source>
+			</trans-unit>
+			<trans-unit id="diff.description">
+				<source>diff</source>
+			</trans-unit>
+			<trans-unit id="letztemessung.description">
+				<source>letztemessung</source>
+			</trans-unit>
+			<trans-unit id="problem.description">
+				<source>problem</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
