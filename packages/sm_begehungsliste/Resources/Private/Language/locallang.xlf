@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:sm_begehungsliste/Resources/Private/Language/locallang.xlf" date="2022-08-22T17:47:26Z" product-name="sm_begehungsliste">
+		<header/>
+		<body>
+			<trans-unit id="tx_smbegehungsliste_domain_model_rundgang" resname="tx_smbegehungsliste_domain_model_rundgang">
+				<source>Rundgang</source>
+			</trans-unit>
+			<trans-unit id="tx_smbegehungsliste_domain_model_rundgang.kurztext" resname="tx_smbegehungsliste_domain_model_rundgang.kurztext">
+				<source>Kurztext</source>
+			</trans-unit>
+			<trans-unit id="tx_smbegehungsliste_domain_model_rundgang.ort" resname="tx_smbegehungsliste_domain_model_rundgang.ort">
+				<source>Ort</source>
+			</trans-unit>
+			<trans-unit id="tx_smbegehungsliste_domain_model_rundgang.images" resname="tx_smbegehungsliste_domain_model_rundgang.images">
+				<source>Images</source>
+			</trans-unit>
+			<trans-unit id="tx_smbegehungsliste_domain_model_rundgang.problems" resname="tx_smbegehungsliste_domain_model_rundgang.problems">
+				<source>Problems</source>
+			</trans-unit>
+			<trans-unit id="tx_smbegehungsliste_domain_model_rundgang.verantwortlicher" resname="tx_smbegehungsliste_domain_model_rundgang.verantwortlicher">
+				<source>Verantwortlicher</source>
+			</trans-unit>
+			<trans-unit id="tx_smbegehungsliste_domain_model_rundgang.teilnehmer" resname="tx_smbegehungsliste_domain_model_rundgang.teilnehmer">
+				<source>Teilnehmer</source>
+			</trans-unit>
+			<trans-unit id="tx_smbegehungsliste_domain_model_rundgang.schwerpunkt" resname="tx_smbegehungsliste_domain_model_rundgang.schwerpunkt">
+				<source>Schwerpunkt</source>
+			</trans-unit>
+			<trans-unit id="tx_smbegehungsliste_domain_model_feuser" resname="tx_smbegehungsliste_domain_model_feuser">
+				<source>Feuser</source>
+			</trans-unit>
+			<trans-unit id="tx_smbegehungsliste_domain_model_problem" resname="tx_smbegehungsliste_domain_model_problem">
+				<source>Problem</source>
+			</trans-unit>
+			<trans-unit id="tx_smbegehungsliste_domain_model_problem.text" resname="tx_smbegehungsliste_domain_model_problem.text">
+				<source>Text</source>
+			</trans-unit>
+			<trans-unit id="tx_smbegehungsliste_domain_model_problem.status" resname="tx_smbegehungsliste_domain_model_problem.status">
+				<source>Status</source>
+			</trans-unit>
+			<trans-unit id="tx_smbegehungsliste_domain_model_problem.images" resname="tx_smbegehungsliste_domain_model_problem.images">
+				<source>Images</source>
+			</trans-unit>
+			<trans-unit id="tx_smbegehungsliste_domain_model_problem.termin" resname="tx_smbegehungsliste_domain_model_problem.termin">
+				<source>Termin</source>
+			</trans-unit>
+			<trans-unit id="tx_smbegehungsliste_domain_model_problem.feuser" resname="tx_smbegehungsliste_domain_model_problem.feuser">
+				<source>Feuser</source>
+			</trans-unit>
+			<trans-unit id="tx_smbegehungsliste_domain_model_problem.logs" resname="tx_smbegehungsliste_domain_model_problem.logs">
+				<source>Logs</source>
+			</trans-unit>
+			<trans-unit id="tx_smbegehungsliste_domain_model_problem.massnahme" resname="tx_smbegehungsliste_domain_model_problem.massnahme">
+				<source>Massnahme</source>
+			</trans-unit>
+			<trans-unit id="tx_smbegehungsliste_domain_model_problem.bereich" resname="tx_smbegehungsliste_domain_model_problem.bereich">
+				<source>Bereich</source>
+			</trans-unit>
+			<trans-unit id="tx_smbegehungsliste_domain_model_log" resname="tx_smbegehungsliste_domain_model_log">
+				<source>Log</source>
+			</trans-unit>
+			<trans-unit id="tx_smbegehungsliste_domain_model_log.text" resname="tx_smbegehungsliste_domain_model_log.text">
+				<source>Text</source>
+			</trans-unit>
+			<trans-unit id="tx_smbegehungsliste_domain_model_log.type" resname="tx_smbegehungsliste_domain_model_log.type">
+				<source>Type</source>
+			</trans-unit>
+			<trans-unit id="tx_smbegehungsliste_domain_model_log.feuser" resname="tx_smbegehungsliste_domain_model_log.feuser">
+				<source>Feuser</source>
+			</trans-unit>
+			<trans-unit id="tx_smbegehungsliste_domain_model_schwerpunkt" resname="tx_smbegehungsliste_domain_model_schwerpunkt">
+				<source>Schwerpunkt</source>
+			</trans-unit>
+			<trans-unit id="tx_smbegehungsliste_domain_model_schwerpunkt.name" resname="tx_smbegehungsliste_domain_model_schwerpunkt.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_smbegehungsliste_domain_model_massnahme" resname="tx_smbegehungsliste_domain_model_massnahme">
+				<source>Massnahme</source>
+			</trans-unit>
+			<trans-unit id="tx_smbegehungsliste_domain_model_massnahme.name" resname="tx_smbegehungsliste_domain_model_massnahme.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_smbegehungsliste_domain_model_bereich" resname="tx_smbegehungsliste_domain_model_bereich">
+				<source>Bereich</source>
+			</trans-unit>
+			<trans-unit id="tx_smbegehungsliste_domain_model_bereich.name" resname="tx_smbegehungsliste_domain_model_bereich.name">
+				<source>Name</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

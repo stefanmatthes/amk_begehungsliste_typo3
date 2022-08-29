@@ -1,0 +1,14 @@
+plugin.tx_smbegehungsliste_begehungsliste {
+    view {
+        # cat=plugin.tx_smbegehungsliste_begehungsliste/file; type=string; label=Path to template root (FE)
+        templateRootPath = EXT:sm_begehungsliste/Resources/Private/Templates/
+        # cat=plugin.tx_smbegehungsliste_begehungsliste/file; type=string; label=Path to template partials (FE)
+        partialRootPath = EXT:sm_begehungsliste/Resources/Private/Partials/
+        # cat=plugin.tx_smbegehungsliste_begehungsliste/file; type=string; label=Path to template layouts (FE)
+        layoutRootPath = EXT:sm_begehungsliste/Resources/Private/Layouts/
+    }
+    persistence {
+        # cat=plugin.tx_smbegehungsliste_begehungsliste//a; type=string; label=Default storage PID
+        storagePid =
+    }
+}

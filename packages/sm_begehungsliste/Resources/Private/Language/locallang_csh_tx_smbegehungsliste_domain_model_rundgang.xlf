@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:sm_begehungsliste/Resources/Private/Language/locallang_csh_tx_smbegehungsliste_domain_model_rundgang.xlf" date="2022-08-22T17:47:26Z" product-name="sm_begehungsliste">
+		<header/>
+		<body>
+			<trans-unit id="kurztext.description" resname="kurztext.description">
+				<source>kurztext</source>
+			</trans-unit>
+			<trans-unit id="ort.description" resname="ort.description">
+				<source>ort</source>
+			</trans-unit>
+			<trans-unit id="images.description" resname="images.description">
+				<source>images</source>
+			</trans-unit>
+			<trans-unit id="problems.description" resname="problems.description">
+				<source>problems</source>
+			</trans-unit>
+			<trans-unit id="verantwortlicher.description" resname="verantwortlicher.description">
+				<source>verantwortlicher</source>
+			</trans-unit>
+			<trans-unit id="teilnehmer.description" resname="teilnehmer.description">
+				<source>teilnehmer</source>
+			</trans-unit>
+			<trans-unit id="schwerpunkt.description" resname="schwerpunkt.description">
+				<source>schwerpunkt</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

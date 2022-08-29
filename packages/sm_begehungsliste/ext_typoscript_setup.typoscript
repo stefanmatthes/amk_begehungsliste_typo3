@@ -1,0 +1,15 @@
+
+config.tx_extbase {
+  persistence {
+    classes {
+
+      Be\SmBegehungsliste\Domain\Model\Feuser {
+        mapping {
+          tableName = fe_users
+          recordType = Tx_SmBegehungsliste_Feuser
+        }
+      }
+
+    }
+  }
+}
