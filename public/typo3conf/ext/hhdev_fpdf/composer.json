@@ -1,0 +1,28 @@
+{
+  "name": "heikohardt/hhdev-fpdf",
+  "description": "FPDF Library - Provides FPDF Library (www.fpdf.org / v.1.7) for TYPO3 > 6.1",
+  "authors": [
+    {
+      "name": "Heiko Hardt",
+      "email": "typo3.heiko@hardt.me",
+      "role": "Developer"
+    }
+  ],
+  "type": "typo3-cms-extension",
+  "version": "0.1.5",
+  "license": [
+    "GPL-2.0+"
+  ],
+  "require": {
+    "php": ">=5.6.0",
+    "typo3/cms-core": ">=6.1.0 <=9.5.99"
+  },
+  "replace": {
+    "hhdev_fpdf": "self.version"
+  },
+  "autoload": {
+    "psr-4": {
+      "HeikoHardt\\HhdevFpdf\\": "Classes/"
+    }
+  }
+}

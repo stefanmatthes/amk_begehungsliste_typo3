@@ -23,6 +23,7 @@ Otherwise your changes will be overwritten the next time you save the extension 
             <th><f:translate key="tx_smbegehungsliste_domain_model_rundgang.kurztext" /></th>
             <th><f:translate key="tx_smbegehungsliste_domain_model_rundgang.ort" /></th>
             <th><f:translate key="tx_smbegehungsliste_domain_model_rundgang.images" /></th>
+            <th><f:translate key="tx_smbegehungsliste_domain_model_rundgang.neueinhalte" /></th>
             <th></th>
             <th></th>
         </tr>
@@ -31,6 +32,7 @@ Otherwise your changes will be overwritten the next time you save the extension 
                 <td><f:link.action action="show" arguments="{rundgang : rundgang}">{rundgang.kurztext}</f:link.action></td>
                 <td><f:link.action action="show" arguments="{rundgang : rundgang}">{rundgang.ort}</f:link.action></td>
                 <td><f:link.action action="show" arguments="{rundgang : rundgang}">{rundgang.images -> f:count()} images</f:link.action></td>
+                <td><f:link.action action="show" arguments="{rundgang : rundgang}">{rundgang.neueinhalte}</f:link.action></td>
                 <td><f:link.action action="edit" arguments="{rundgang : rundgang}">Edit</f:link.action></td>
                 <td><f:link.action action="delete" arguments="{rundgang : rundgang}">Delete</f:link.action></td>
             </tr>

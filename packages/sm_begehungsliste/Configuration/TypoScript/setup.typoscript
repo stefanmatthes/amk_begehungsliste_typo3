@@ -7,8 +7,19 @@ plugin.tx_smbegehungsliste_begehungsliste {
         layoutRootPaths.0 = EXT:sm_begehungsliste/Resources/Private/Layouts/
         layoutRootPaths.1 = {$plugin.tx_smbegehungsliste_begehungsliste.view.layoutRootPath}
     }
+
     persistence {
         storagePid = {$plugin.tx_smbegehungsliste_begehungsliste.persistence.storagePid}
+        classes {
+            Be\SmBegehungsliste\Domain\Model\FileReference {
+                mapping {
+                    tableName = sys_file_reference
+                    columns {
+                        uid_local.mapOnProperty = originalFileIdentifier
+                    }
+                }
+            }
+        }
         #recursive = 1
     }
     features {

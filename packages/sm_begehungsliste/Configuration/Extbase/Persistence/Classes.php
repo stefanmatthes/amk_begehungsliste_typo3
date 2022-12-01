@@ -7,4 +7,12 @@ return [
         'tableName' => 'fe_users',
         
     ],
+    \Be\SmBegehungsliste\Domain\Model\FileReference::class => [
+        'tableName' => 'sys_file_reference',
+        'properties' => [
+            'originalFileIdentifier' => [
+                'fieldName' => 'uid_local'
+            ]
+        ]
+    ],
 ];

@@ -24,6 +24,8 @@ Otherwise your changes will be overwritten the next time you save the extension 
             <th><f:translate key="tx_smbegehungsliste_domain_model_problem.status" /></th>
             <th><f:translate key="tx_smbegehungsliste_domain_model_problem.images" /></th>
             <th><f:translate key="tx_smbegehungsliste_domain_model_problem.termin" /></th>
+            <th><f:translate key="tx_smbegehungsliste_domain_model_problem.neueinhalte" /></th>
+            <th><f:translate key="tx_smbegehungsliste_domain_model_problem.image" /></th>
             <th></th>
             <th></th>
         </tr>
@@ -31,8 +33,10 @@ Otherwise your changes will be overwritten the next time you save the extension 
             <tr>
                 <td><f:link.action action="show" arguments="{problem : problem}">{problem.text}</f:link.action></td>
                 <td><f:link.action action="show" arguments="{problem : problem}">{problem.status}</f:link.action></td>
-                <td><f:link.action action="show" arguments="{problem : problem}">{problem.images -> f:count()} images</f:link.action></td>
-                <td><f:link.action action="show" arguments="{problem : problem}">{problem.termin -> f:format.date()}</f:link.action></td>
+                <td><f:link.action action="show" arguments="{problem : problem}">{problem.images}</f:link.action></td>
+                <td><f:link.action action="show" arguments="{problem : problem}">{problem.termin}</f:link.action></td>
+                <td><f:link.action action="show" arguments="{problem : problem}">{problem.neueinhalte}</f:link.action></td>
+                <td><f:link.action action="show" arguments="{problem : problem}">{problem.image -> f:count()} image</f:link.action></td>
                 <td><f:link.action action="edit" arguments="{problem : problem}">Edit</f:link.action></td>
                 <td><f:link.action action="delete" arguments="{problem : problem}">Delete</f:link.action></td>
             </tr>

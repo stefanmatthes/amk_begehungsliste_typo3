@@ -1,0 +1,28 @@
+{
+  "name": "heikohardt/hhdev-fpdf",
+  "description": "FPDI Library - Provides FPDI Library (www.setasign.com/products/fpdi/ / v.1.5.2) for TYPO3 > 6.1",
+  "authors": [
+    {
+      "name": "Heiko Hardt",
+      "email": "typo3.heiko@hardt.me",
+      "role": "Developer"
+    }
+  ],
+  "type": "typo3-cms-extension",
+  "version": "0.1.4",
+  "license": [
+    "GPL-2.0+"
+  ],
+  "require": {
+    "php": ">=5.6.0",
+    "typo3/cms-core": ">=6.1.0 <=9.5.99"
+  },
+  "replace": {
+    "hhdev_fpdi": "self.version"
+  },
+  "autoload": {
+    "psr-4": {
+      "HeikoHardt\\HhdevFpdi\\": "Classes/"
+    }
+  }
+}

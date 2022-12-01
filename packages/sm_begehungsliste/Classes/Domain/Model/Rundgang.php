@@ -19,6 +19,10 @@ namespace Be\SmBegehungsliste\Domain\Model;
  */
 class Rundgang extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 {
+    /**
+     * @var \DateTime
+     */
+    protected $crdate = null;
 
     /**
      * kurztext
@@ -41,6 +45,13 @@ class Rundgang extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @TYPO3\CMS\Extbase\Annotation\ORM\Cascade("remove")
      */
     protected $images = null;
+
+    /**
+     * neueinhalte
+     *
+     * @var string
+     */
+    protected $neueinhalte = '';
 
     /**
      * problems
@@ -120,6 +131,18 @@ class Rundgang extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
         $this->kurztext = $kurztext;
     }
 
+
+    /**
+     * Get Crdate
+     *
+     * @return Crdate
+     */
+    public function getCrdate()
+    {
+        return $this->crdate;
+    }
+
+    
     /**
      * Returns the ort
      *
@@ -310,5 +333,26 @@ class Rundgang extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     public function setSchwerpunkt(\Be\SmBegehungsliste\Domain\Model\Schwerpunkt $schwerpunkt)
     {
         $this->schwerpunkt = $schwerpunkt;
+    }
+
+    /**
+     * Returns the neueinhalte
+     *
+     * @return string $neueinhalte
+     */
+    public function getNeueinhalte()
+    {
+        return $this->neueinhalte;
+    }
+
+    /**
+     * Sets the neueinhalte
+     *
+     * @param string $neueinhalte
+     * @return void
+     */
+    public function setNeueinhalte(string $neueinhalte)
+    {
+        $this->neueinhalte = $neueinhalte;
     }
 }

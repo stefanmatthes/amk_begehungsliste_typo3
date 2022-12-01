@@ -46,3 +46,5 @@ defined('TYPO3_MODE') || die();
         ['source' => 'EXT:sm_begehungsliste/Resources/Public/Icons/user_plugin_begehungsliste.svg']
     );
 })();
+
+

@@ -10,15 +10,23 @@
 	</tr>
 	<tr>
 		<td><f:translate key="tx_smbegehungsliste_domain_model_problem.images" /></td>
-		<td>
-            <f:for each="{problem.images}" as="image" >
-                <f:image src="{image.originalResource.publicUrl}" width="200"/>
-            </f:for>
-        </td>
+		<td>{problem.images}</td>
 	</tr>
 	<tr>
 		<td><f:translate key="tx_smbegehungsliste_domain_model_problem.termin" /></td>
-		<td>{problem.termin -> f:format.date()}</td>
+		<td>{problem.termin}</td>
+	</tr>
+	<tr>
+		<td><f:translate key="tx_smbegehungsliste_domain_model_problem.neueinhalte" /></td>
+		<td>{problem.neueinhalte}</td>
+	</tr>
+	<tr>
+		<td><f:translate key="tx_smbegehungsliste_domain_model_problem.image" /></td>
+		<td>
+            <f:for each="{problem.image}" as="image" >
+                <f:image src="{image.originalResource.publicUrl}" width="200"/>
+            </f:for>
+        </td>
 	</tr>
 </table>
 </html>

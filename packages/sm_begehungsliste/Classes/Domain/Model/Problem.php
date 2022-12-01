@@ -42,10 +42,9 @@ class Problem extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * images
      *
-     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FileReference>
-     * @TYPO3\CMS\Extbase\Annotation\ORM\Cascade("remove")
+     * @var string
      */
-    protected $images = null;
+    protected $images = '';
 
     /**
      * termin
@@ -55,10 +54,16 @@ class Problem extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     protected $termin = null;
 
     /**
+     * neueinhalte
+     *
+     * @var string
+     */
+    protected $neueinhalte = '';
+
+    /**
      * feuser
      *
      * @var \TYPO3\CMS\Extbase\Domain\Model\FrontendUser
-     * @TYPO3\CMS\Extbase\Annotation\ORM\Lazy
      */
     protected $feuser = null;
 
@@ -88,6 +93,14 @@ class Problem extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     protected $bereich = null;
 
     /**
+     * image
+     *
+     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FileReference>
+     * @TYPO3\CMS\Extbase\Annotation\ORM\Cascade("remove")
+     */
+    protected $image = null;
+
+    /**
      * __construct
      */
     public function __construct()
@@ -107,7 +120,7 @@ class Problem extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      */
     public function initializeObject()
     {
-        $this->images = $this->images ?: new \TYPO3\CMS\Extbase\Persistence\ObjectStorage();
+        $this->image = $this->image ?: new \TYPO3\CMS\Extbase\Persistence\ObjectStorage();
         $this->logs = $this->logs ?: new \TYPO3\CMS\Extbase\Persistence\ObjectStorage();
     }
 
@@ -161,49 +174,6 @@ class Problem extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     public function setStatus(int $status)
     {
         $this->status = $status;
-    }
-
-    /**
-     * Adds a FileReference
-     *
-     * @param \TYPO3\CMS\Extbase\Domain\Model\FileReference $image
-     * @return void
-     */
-    public function addImage(\TYPO3\CMS\Extbase\Domain\Model\FileReference $image)
-    {
-        $this->images->attach($image);
-    }
-
-    /**
-     * Removes a FileReference
-     *
-     * @param \TYPO3\CMS\Extbase\Domain\Model\FileReference $imageToRemove The FileReference to be removed
-     * @return void
-     */
-    public function removeImage(\TYPO3\CMS\Extbase\Domain\Model\FileReference $imageToRemove)
-    {
-        $this->images->detach($imageToRemove);
-    }
-
-    /**
-     * Returns the images
-     *
-     * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FileReference> $images
-     */
-    public function getImages()
-    {
-        return $this->images;
-    }
-
-    /**
-     * Sets the images
-     *
-     * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FileReference> $images
-     * @return void
-     */
-    public function setImages(\TYPO3\CMS\Extbase\Persistence\ObjectStorage $images)
-    {
-        $this->images = $images;
     }
 
     /**
@@ -271,27 +241,6 @@ class Problem extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     }
 
     /**
-     * Returns the termin
-     *
-     * @return \DateTime $termin
-     */
-    public function getTermin()
-    {
-        return $this->termin;
-    }
-
-    /**
-     * Sets the termin
-     *
-     * @param string $termin
-     * @return void
-     */
-    public function setTermin(string $termin)
-    {
-        $this->termin = $termin;
-    }
-
-    /**
      * Returns the massnahme
      *
      * @return \Be\SmBegehungsliste\Domain\Model\Massnahme $massnahme
@@ -331,5 +280,111 @@ class Problem extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     public function setBereich(\Be\SmBegehungsliste\Domain\Model\Bereich $bereich)
     {
         $this->bereich = $bereich;
+    }
+
+    /**
+     * Returns the termin
+     *
+     * @return string termin
+     */
+    public function getTermin()
+    {
+        return $this->termin;
+    }
+
+    /**
+     * Sets the termin
+     *
+     * @param string $termin
+     * @return void
+     */
+    public function setTermin(string $termin)
+    {
+        $this->termin = $termin;
+    }
+
+    /**
+     * Returns the images
+     *
+     * @return string $images
+     */
+    public function getImages()
+    {
+        return $this->images;
+    }
+
+    /**
+     * Sets the images
+     *
+     * @param string $images
+     * @return void
+     */
+    public function setImages(string $images)
+    {
+        $this->images = $images;
+    }
+
+    /**
+     * Returns the neueinhalte
+     *
+     * @return string $neueinhalte
+     */
+    public function getNeueinhalte()
+    {
+        return $this->neueinhalte;
+    }
+
+    /**
+     * Sets the neueinhalte
+     *
+     * @param string $neueinhalte
+     * @return void
+     */
+    public function setNeueinhalte(string $neueinhalte)
+    {
+        $this->neueinhalte = $neueinhalte;
+    }
+
+    /**
+     * Adds a FileReference
+     *
+     * @param \Be\SmBegehungsliste\Domain\Model\FileReference $image
+     * @return void
+     */
+    public function addImage(\Be\SmBegehungsliste\Domain\Model\FileReference $image)
+    {
+        $this->image->attach($image);
+    }
+
+    /**
+     * Removes a FileReference
+     *
+     * @param \TYPO3\CMS\Extbase\Domain\Model\FileReference $imageToRemove The FileReference to be removed
+     * @return void
+     */
+    public function removeImage(\TYPO3\CMS\Extbase\Domain\Model\FileReference $imageToRemove)
+    {
+        $this->image->detach($imageToRemove);
+    }
+
+    /**
+     * Returns the image
+     *
+     * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FileReference> $image
+     */
+    public function getImage()
+    {
+        return $this->image;
+    }
+
+    /**
+     * Sets the image
+     *
+     * @param \Be\SmBegehungsliste\Domain\Model\FileReference $image
+     * @return void
+     */
+    public function setImage(\Be\SmBegehungsliste\Domain\Model\FileReference $image)
+    {
+        $this->image = $image;
     }
 }

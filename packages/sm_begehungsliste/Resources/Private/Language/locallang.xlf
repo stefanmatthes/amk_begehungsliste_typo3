@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="EXT:sm_begehungsliste/Resources/Private/Language/locallang.xlf" date="2022-08-22T17:47:26Z" product-name="sm_begehungsliste">
+	<file source-language="en" datatype="plaintext" original="EXT:sm_begehungsliste/Resources/Private/Language/locallang.xlf" date="2022-09-16T11:41:27Z" product-name="sm_begehungsliste">
 		<header/>
 		<body>
 			<trans-unit id="tx_smbegehungsliste_domain_model_rundgang" resname="tx_smbegehungsliste_domain_model_rundgang">
@@ -14,6 +14,9 @@
 			</trans-unit>
 			<trans-unit id="tx_smbegehungsliste_domain_model_rundgang.images" resname="tx_smbegehungsliste_domain_model_rundgang.images">
 				<source>Images</source>
+			</trans-unit>
+			<trans-unit id="tx_smbegehungsliste_domain_model_rundgang.neueinhalte" resname="tx_smbegehungsliste_domain_model_rundgang.neueinhalte">
+				<source>Neueinhalte</source>
 			</trans-unit>
 			<trans-unit id="tx_smbegehungsliste_domain_model_rundgang.problems" resname="tx_smbegehungsliste_domain_model_rundgang.problems">
 				<source>Problems</source>
@@ -44,6 +47,12 @@
 			</trans-unit>
 			<trans-unit id="tx_smbegehungsliste_domain_model_problem.termin" resname="tx_smbegehungsliste_domain_model_problem.termin">
 				<source>Termin</source>
+			</trans-unit>
+			<trans-unit id="tx_smbegehungsliste_domain_model_problem.neueinhalte" resname="tx_smbegehungsliste_domain_model_problem.neueinhalte">
+				<source>Neueinhalte</source>
+			</trans-unit>
+			<trans-unit id="tx_smbegehungsliste_domain_model_problem.image" resname="tx_smbegehungsliste_domain_model_problem.image">
+				<source>Image</source>
 			</trans-unit>
 			<trans-unit id="tx_smbegehungsliste_domain_model_problem.feuser" resname="tx_smbegehungsliste_domain_model_problem.feuser">
 				<source>Feuser</source>

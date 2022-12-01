@@ -106,11 +106,62 @@ class ProblemController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
      * @param \Be\SmBegehungsliste\Domain\Model\Problem $problem
      * @return string|object|null|void
      */
-    public function updateAction(\Be\SmBegehungsliste\Domain\Model\Problem $problem)
+    public function updateAction(\Be\SmBegehungsliste\Domain\Model\Problem $problem = NULL)
     {
+
+
         $this->addFlashMessage('The object was updated. Please be aware that this action is publicly accessible unless you implement an access check. See https://docs.typo3.org/p/friendsoftypo3/extension-builder/master/en-us/User/Index.html', '', \TYPO3\CMS\Core\Messaging\AbstractMessage::WARNING);
-        $this->problemRepository->update($problem);
-        $this->redirect('list');
+    // echo "update ".\TYPO3\CMS\Core\Utility\GeneralUtility::_GP('problemUid');
+
+
+        $problem = $this->problemRepository->findByUid(\TYPO3\CMS\Core\Utility\GeneralUtility::_GP('problemUid'));
+    //    if (\TYPO3\CMS\Core\Utility\GeneralUtility::_GP('status') ){
+          //  echo "setstatus";
+
+      //  }
+
+
+        if (\TYPO3\CMS\Core\Utility\GeneralUtility::_GP('type') == '1452982642') {
+           // was soll gemacht werden?
+            // Status setzen
+
+     //       echo "modus: ".\TYPO3\CMS\Core\Utility\GeneralUtility::_GP('modus');
+            if (\TYPO3\CMS\Core\Utility\GeneralUtility::_GP('modus') == 'status')
+            {
+                $new_status = \TYPO3\CMS\Core\Utility\GeneralUtility::_GP('status') ;
+                $problem->setStatus(intval($new_status));
+         //       echo "new status ".$new_status;
+            }
+
+            if (\TYPO3\CMS\Core\Utility\GeneralUtility::_GP('modus') == 'deleteimage')
+            {
+                foreach ($problem->getImage() as $image) {
+                    $problem->removeImage($image);
+                //    echo "11";
+
+                }
+         //       echo "new status ".$new_status;
+            }
+
+            $theView = $this->objectManager->get('TYPO3\\CMS\\Extbase\\Mvc\\View\\JsonView');
+            $theView->setControllerContext($this->controllerContext);
+
+            $theView->assign('mangel', $problem);
+
+            //   $theView->assign('rundgaenge', $rundgange_array);
+         //   $theView->setVariablesToRender(['rundgaenge']);
+            $this->problemRepository->update($problem);
+
+            $persistenceManager = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance('TYPO3\\CMS\\Extbase\\Persistence\\Generic\\PersistenceManager');
+            $persistenceManager->persistAll();
+
+            return $theView->render();
+
+        }
+
+        die();
+
+    //    $this->redirect('list');
     }
 
     /**
@@ -119,8 +170,26 @@ class ProblemController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
      * @param \Be\SmBegehungsliste\Domain\Model\Problem $problem
      * @return string|object|null|void
      */
-    public function deleteAction(\Be\SmBegehungsliste\Domain\Model\Problem $problem)
+    public function deleteAction(\Be\SmBegehungsliste\Domain\Model\Problem $problem = NULL)
     {
+        if (\TYPO3\CMS\Core\Utility\GeneralUtility::_GP('type') == '1452982642') {
+            $problem = $this->problemRepository->findByUid(\TYPO3\CMS\Core\Utility\GeneralUtility::_GP('problemUid'));
+
+            $theView = $this->objectManager->get('TYPO3\\CMS\\Extbase\\Mvc\\View\\JsonView');
+            $theView->setControllerContext($this->controllerContext);
+
+
+            //   $theView->assign('rundgaenge', $rundgange_array);
+            //   $theView->setVariablesToRender(['rundgaenge']);
+            $this->problemRepository->remove($problem);
+
+            $persistenceManager = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance('TYPO3\\CMS\\Extbase\\Persistence\\Generic\\PersistenceManager');
+            $persistenceManager->persistAll();
+
+            return $theView->render();
+die();
+        }
+
         $this->addFlashMessage('The object was deleted. Please be aware that this action is publicly accessible unless you implement an access check. See https://docs.typo3.org/p/friendsoftypo3/extension-builder/master/en-us/User/Index.html', '', \TYPO3\CMS\Core\Messaging\AbstractMessage::WARNING);
         $this->problemRepository->remove($problem);
         $this->redirect('list');

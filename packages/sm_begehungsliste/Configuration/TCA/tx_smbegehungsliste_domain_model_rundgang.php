@@ -2,7 +2,7 @@
 return [
     'ctrl' => [
         'title' => 'LLL:EXT:sm_begehungsliste/Resources/Private/Language/locallang_db.xlf:tx_smbegehungsliste_domain_model_rundgang',
-        'label' => 'kurztext',
+        'label' => 'crdate',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
         'cruser_id' => 'cruser_id',
@@ -17,11 +17,11 @@ return [
             'starttime' => 'starttime',
             'endtime' => 'endtime',
         ],
-        'searchFields' => 'kurztext,ort',
+        'searchFields' => 'kurztext,ort,neueinhalte',
         'iconfile' => 'EXT:sm_begehungsliste/Resources/Public/Icons/tx_smbegehungsliste_domain_model_rundgang.gif'
     ],
     'types' => [
-        '1' => ['showitem' => 'kurztext, ort, images, problems, verantwortlicher, teilnehmer, schwerpunkt, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language, sys_language_uid, l10n_parent, l10n_diffsource, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access, hidden, starttime, endtime'],
+        '1' => ['showitem' => 'kurztext, ort, images, neueinhalte, problems, verantwortlicher, teilnehmer, schwerpunkt, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language, sys_language_uid, l10n_parent, l10n_diffsource, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access, hidden, starttime, endtime'],
     ],
     'columns' => [
         'sys_language_uid' => [
@@ -179,6 +179,17 @@ return [
             ),
 
         ],
+        'neueinhalte' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:sm_begehungsliste/Resources/Private/Language/locallang_db.xlf:tx_smbegehungsliste_domain_model_rundgang.neueinhalte',
+            'config' => [
+                'type' => 'text',
+                'cols' => 40,
+                'rows' => 15,
+                'eval' => 'trim',
+                'default' => ''
+            ]
+        ],
         'problems' => [
             'exclude' => true,
             'label' => 'LLL:EXT:sm_begehungsliste/Resources/Private/Language/locallang_db.xlf:tx_smbegehungsliste_domain_model_rundgang.problems',
@@ -188,7 +199,7 @@ return [
                 'foreign_field' => 'rundgang',
                 'maxitems' => 9999,
                 'appearance' => [
-                    'collapseAll' => 0,
+                    'collapseAll' => 1,
                     'levelLinksPosition' => 'top',
                     'showSynchronizationLink' => 1,
                     'showPossibleLocalizationRecords' => 1,
@@ -275,6 +286,10 @@ return [
             ],
             
         ],
-    
+        'crdate' => [
+            'config' => [
+                'type' => 'passthrough',
+            ],
+        ],
     ],
 ];

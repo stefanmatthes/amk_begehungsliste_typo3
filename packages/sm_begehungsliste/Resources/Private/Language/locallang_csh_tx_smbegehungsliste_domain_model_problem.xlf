@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="EXT:sm_begehungsliste/Resources/Private/Language/locallang_csh_tx_smbegehungsliste_domain_model_problem.xlf" date="2022-08-22T17:47:26Z" product-name="sm_begehungsliste">
+	<file source-language="en" datatype="plaintext" original="EXT:sm_begehungsliste/Resources/Private/Language/locallang_csh_tx_smbegehungsliste_domain_model_problem.xlf" date="2022-09-16T11:41:27Z" product-name="sm_begehungsliste">
 		<header/>
 		<body>
 			<trans-unit id="text.description" resname="text.description">
@@ -14,6 +14,12 @@
 			</trans-unit>
 			<trans-unit id="termin.description" resname="termin.description">
 				<source>termin</source>
+			</trans-unit>
+			<trans-unit id="neueinhalte.description" resname="neueinhalte.description">
+				<source>neueinhalte</source>
+			</trans-unit>
+			<trans-unit id="image.description" resname="image.description">
+				<source>image</source>
 			</trans-unit>
 			<trans-unit id="feuser.description" resname="feuser.description">
 				<source>feuser</source>

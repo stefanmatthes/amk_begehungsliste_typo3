@@ -13,6 +13,7 @@
 		"sort-packages": true
 	},
 	"require": {
+		"amazing/media2click": "^3.0",
 		"be/sm-begehungsliste": "@dev",
 		"brainworxx/includekrexx": "^4.1",
 		"friendsoftypo3/extension-builder": "^10.0",

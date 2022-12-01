@@ -16,11 +16,11 @@ return [
             'starttime' => 'starttime',
             'endtime' => 'endtime',
         ],
-        'searchFields' => 'text',
+        'searchFields' => 'text,images,termin,neueinhalte',
         'iconfile' => 'EXT:sm_begehungsliste/Resources/Public/Icons/tx_smbegehungsliste_domain_model_problem.gif'
     ],
     'types' => [
-        '1' => ['showitem' => 'text, status, images, termin, feuser, logs, massnahme, bereich, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language, sys_language_uid, l10n_parent, l10n_diffsource, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access, hidden, starttime, endtime'],
+        '1' => ['showitem' => 'text, status, images, termin, neueinhalte, image, feuser, logs, massnahme, bereich, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language, sys_language_uid, l10n_parent, l10n_diffsource, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access, hidden, starttime, endtime'],
     ],
     'columns' => [
         'sys_language_uid' => [
@@ -122,6 +122,7 @@ return [
                 'renderType' => 'selectSingle',
                 'items' => [
                     ['-- Label --', 0],
+                    ['erledigt', 1],
                 ],
                 'size' => 1,
                 'maxitems' => 1,
@@ -131,9 +132,41 @@ return [
         'images' => [
             'exclude' => true,
             'label' => 'LLL:EXT:sm_begehungsliste/Resources/Private/Language/locallang_db.xlf:tx_smbegehungsliste_domain_model_problem.images',
+            'config' => [
+                'type' => 'text',
+                'cols' => 40,
+                'rows' => 15,
+                'eval' => 'trim',
+                'default' => ''
+            ]
+        ],
+        'termin' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:sm_begehungsliste/Resources/Private/Language/locallang_db.xlf:tx_smbegehungsliste_domain_model_problem.termin',
+            'config' => [
+                'type' => 'input',
+                'size' => 30,
+                'eval' => 'trim',
+                'default' => ''
+            ],
+        ],
+        'neueinhalte' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:sm_begehungsliste/Resources/Private/Language/locallang_db.xlf:tx_smbegehungsliste_domain_model_problem.neueinhalte',
+            'config' => [
+                'type' => 'text',
+                'cols' => 40,
+                'rows' => 15,
+                'eval' => 'trim',
+                'default' => ''
+            ]
+        ],
+        'image' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:sm_begehungsliste/Resources/Private/Language/locallang_db.xlf:tx_smbegehungsliste_domain_model_problem.image',
             'config' => 
             \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
-                'images',
+                'image',
                 [
                     'appearance' => [
                         'createNewRelationLinkTitle' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:images.addFileReference'
@@ -171,7 +204,7 @@ return [
                         ]
                     ],
                     'foreign_match_fields' => [
-                        'fieldname' => 'images',
+                        'fieldname' => 'image',
                         'tablenames' => 'tx_smbegehungsliste_domain_model_problem',
                         'table_local' => 'sys_file',
                     ],
@@ -180,17 +213,6 @@ return [
                 $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext']
             ),
 
-        ],
-        'termin' => [
-            'exclude' => true,
-            'label' => 'LLL:EXT:sm_begehungsliste/Resources/Private/Language/locallang_db.xlf:tx_smbegehungsliste_domain_model_problem.termin',
-            'config' => [
-                'type' => 'input',
-                'renderType' => 'inputDateTime',
-                'size' => 10,
-                'eval' => 'datetime',
-                'default' => time()
-            ],
         ],
         'feuser' => [
             'exclude' => true,
@@ -251,6 +273,11 @@ return [
         ],
     
         'rundgang' => [
+            'config' => [
+                'type' => 'passthrough',
+            ],
+        ],
+        'crdate' => [
             'config' => [
                 'type' => 'passthrough',
             ],

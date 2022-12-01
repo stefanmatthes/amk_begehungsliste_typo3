@@ -71,6 +71,18 @@
                             "propertyName": "images",
                             "propertyType": "Image",
                             "uid": "1356133302989"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "99",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsNullable": false,
+                            "propertyIsRequired": false,
+                            "propertyName": "neueinhalte",
+                            "propertyType": "Text",
+                            "uid": "737445637859"
                         }
                     ]
                 },
@@ -167,8 +179,8 @@
         {
             "config": {
                 "position": [
-                    724,
-                    435
+                    715,
+                    296
                 ]
             },
             "name": "New Model Object",
@@ -231,7 +243,7 @@
                             "propertyIsNullable": false,
                             "propertyIsRequired": false,
                             "propertyName": "images",
-                            "propertyType": "Image",
+                            "propertyType": "Text",
                             "uid": "1230412033382"
                         },
                         {
@@ -243,8 +255,32 @@
                             "propertyIsNullable": false,
                             "propertyIsRequired": false,
                             "propertyName": "termin",
-                            "propertyType": "DateTime",
+                            "propertyType": "String",
                             "uid": "1575059390124"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "99",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsNullable": false,
+                            "propertyIsRequired": false,
+                            "propertyName": "neueinhalte",
+                            "propertyType": "Text",
+                            "uid": "420565534912"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "99",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsNullable": false,
+                            "propertyIsRequired": false,
+                            "propertyName": "image",
+                            "propertyType": "Image",
+                            "uid": "311036138612"
                         }
                     ]
                 },
@@ -541,7 +577,7 @@
         "emConf": {
             "category": "plugin",
             "custom_category": "",
-            "dependsOn": "typo3 => 8.7.0-8.7.99\n",
+            "dependsOn": "typo3 => 10.4.0-10.7.99\n",
             "disableLocalization": false,
             "disableVersioning": false,
             "generateDocumentationTemplate": false,
@@ -550,7 +586,7 @@
             "sourceLanguage": "en",
             "state": "alpha",
             "targetVersion": "10.4.0-10.4.99",
-            "version": "1.0.0"
+            "version": "1.0.1"
         },
         "extensionKey": "sm_begehungsliste",
         "name": "Begehungsliste",
@@ -689,7 +725,7 @@
     ],
     "storagePath": "\/var\/www\/html\/packages\/",
     "log": {
-        "last_modified": "2022-08-22 05:47",
+        "last_modified": "2022-09-16 11:41",
         "extension_builder_version": "10.0.3",
         "be_user": " (1)"
     }

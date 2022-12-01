@@ -139,6 +139,27 @@ class RundgangTest extends UnitTestCase
     /**
      * @test
      */
+    public function getNeueinhalteReturnsInitialValueForString(): void
+    {
+        self::assertSame(
+            '',
+            $this->subject->getNeueinhalte()
+        );
+    }
+
+    /**
+     * @test
+     */
+    public function setNeueinhalteForStringSetsNeueinhalte(): void
+    {
+        $this->subject->setNeueinhalte('Conceived at T3CON10');
+
+        self::assertEquals('Conceived at T3CON10', $this->subject->_get('neueinhalte'));
+    }
+
+    /**
+     * @test
+     */
     public function getProblemsReturnsInitialValueForProblem(): void
     {
         $newObjectStorage = new \TYPO3\CMS\Extbase\Persistence\ObjectStorage();

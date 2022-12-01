@@ -10,9 +10,17 @@
 <label for="images">
 	<f:translate key="tx_smbegehungsliste_domain_model_problem.images" />
 </label><br />
-	<span>File upload is not implemented!</span><br /><br />
+	<f:form.textarea property="images" id="images" cols="40" rows="15" /><br />
 <label for="termin">
 	<f:translate key="tx_smbegehungsliste_domain_model_problem.termin" />
 </label><br />
-	<f:form.textfield property="termin" id="termin" value="{problem.termin->f:format.date()}" /><br />
+	<f:form.textfield property="termin" id="termin" /><br />
+<label for="neueinhalte">
+	<f:translate key="tx_smbegehungsliste_domain_model_problem.neueinhalte" />
+</label><br />
+	<f:form.textarea property="neueinhalte" id="neueinhalte" cols="40" rows="15" /><br />
+<label for="image">
+	<f:translate key="tx_smbegehungsliste_domain_model_problem.image" />
+</label><br />
+	<span>File upload is not implemented!</span><br /><br />
 </html>
